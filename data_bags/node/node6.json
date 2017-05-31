@@ -1,0 +1,31 @@
+"id" : "node6",
+"name" : "node6",
+"chef_environment" : "_default",
+"json_class": "Chef::Node",
+"automatic": {},
+"normal": {},
+"chef_type": "node",
+"default" : {
+    "mapr" : {
+        "host" : "node6",
+        "fqdn" : "node6.cluster.com",
+        "ip" : "192.168.33.13"
+    }
+},
+"override" : {},
+"run_list" : [
+    "role[mapr_beta]",
+    "role[mapr_tasktracker]",
+    "role[mapr_fileserver]",
+    "role[mapr_zookeeper]",
+    "role[mapr_jobtracker]",
+    "role[mapr_configure]"
+
+
+    "recipe[mapr:nodemanager]",
+    "recipe[mapr:fileserver]",
+    "recipe[mapr:hive]",
+    "recipe[mapr:spark]",
+    "recipe[mapr:drill]"
+]
+}

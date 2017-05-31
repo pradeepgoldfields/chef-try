@@ -1,0 +1,14 @@
+# use Opscode's public cookbooks
+source "https://supermarket.getchef.com"
+
+# use these cookbooks
+cookbook 'apt'
+cookbook 'emacs'
+cookbook 'hostname'
+cookbook 'hostsfile'
+cookbook 'iptables'
+cookbook 'java', '= 1.7.0'
+cookbook 'mysql'
+cookbook 'ntp'
+cookbook 'ulimit'
+cookbook 'yum'

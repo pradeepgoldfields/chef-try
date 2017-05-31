@@ -1,0 +1,84 @@
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: ------Exception-------
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: 'vagrant' is not recognized as an internal or external command,
+operable program or batch file.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: ----------------------
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:434:in `run_command'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:381:in `run'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:455:in `run_silently'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:521:in `vagrant_version'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:182:in `verify_dependencies'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/driver.rb:43:in `for_plugin'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:233:in `new_driver'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:246:in `new_instance'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:142:in `block in build_instances'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:141:in `map'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:141:in `with_index'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command/list.rb:30:in `call'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:121:in `list'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `load'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `<main>'
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: ---Nested Exception---
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2017-05-31T22:48:42.666069 #4348] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: 'vagrant' is not recognized as an internal or external command,
+operable program or batch file.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: ----------------------
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:434:in `run_command'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:381:in `run'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:455:in `run_silently'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:521:in `vagrant_version'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-vagrant-1.1.0/lib/kitchen/driver/vagrant.rb:182:in `verify_dependencies'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/driver.rb:43:in `for_plugin'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:233:in `new_driver'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:246:in `new_instance'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:142:in `block in build_instances'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:141:in `map'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:141:in `with_index'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command/list.rb:30:in `call'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:121:in `list'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `load'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:24:in `<main>'
+E, [2017-05-31T22:48:42.681669 #4348] ERROR -- Kitchen: ----End Backtrace-----
