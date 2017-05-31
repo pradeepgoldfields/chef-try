@@ -1,3 +1,4 @@
+name 			 "mapr"
 maintainer       "Pradeep"
 maintainer_email "pradeep.goldfields@gmail.com"
 description      "Installs/Configures a Hadoop Cluster"
