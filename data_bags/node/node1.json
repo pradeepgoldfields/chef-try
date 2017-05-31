@@ -1,19 +1,4 @@
 {
-    "id" : "node1",
-    "name" : "node1",
-    "chef_environment" : "_default",
-    "json_class": "Chef::Node",
-    "automatic": {},
-    "normal": {},
-    "chef_type": "node",
-    "default" : {
-        "mapr" : {
-            "host" : "node1",
-            "fqdn" : "node1.cluster.com",
-            "ip" : "192.168.33.11"
-        }
-    },
-    "override" : {},
     "run_list" : [
 
         "recipe[java::oracle]",
