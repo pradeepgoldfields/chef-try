@@ -7,4 +7,4 @@
 
 # TODO: ajaxterm needed?
 
-package "mapr-hiveserver2 "
+package "mapr-hiveserver2"

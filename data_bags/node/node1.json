@@ -1,7 +1,7 @@
 {
     "run_list" : [
         "recipe[mapr::cldb]",
-        "recipe[mapr::Lnodemanager]",
+        "recipe[mapr::nodemanager]",
         "recipe[mapr::fileserver]",
         "recipe[mapr::zookeeper]",
         "recipe[mapr::webserver]",

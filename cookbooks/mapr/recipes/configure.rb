@@ -79,7 +79,7 @@ execute 'nfs-mount' do
   command 'mount -o hard,nolock  #{[:mapr][:nfspackageserver]}:/mapr /mapr'
 end
 
-\\restart services
+#restart services
 execute 'stop-hivemaster' do
   command 'maprcli node services -action stop -name hivemeta -nodes <hivemetaserver>'
 end
@@ -89,7 +89,7 @@ execute 'stop-hiveserver2' do
 end
 
 execute 'restart-all' do
-  command 'maprcli node services -name drill-bits -action restart -nodes `hostname`'   \\hostnames has to be clarified
+  command 'maprcli node services -name drill-bits -action restart -nodes `hostname`'   #hostnames has to be clarified
 end
 
 

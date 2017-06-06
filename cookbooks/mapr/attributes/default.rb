@@ -4,11 +4,11 @@ default[:mapr][:user] = "mapr"
 default[:mapr][:group] = "mapr"
 default[:mapr][:siteconfigpath] = "/opt/mapr/hadoop/hadoop-2.7.0/etc/hadoop"
 default[:mapr][:hiveconfigpath] = "/opt/mapr/hive/hive-1.2/conf"
-default[:mapr][:nfspackageserver] = "nfspackageserver.ntp.org"       \\has to be replaced by actual value
-default[:mapr][:hivemetaserver] = "" \\has to be replaced by actual value
-default[:mapr][:hiveserver2] = "" \\has to be replaced by actual value
-default[:mapr][:groups][:cldb] = {} \\array of cldb servers
-default[:mapr][:groups][:zk]= {} \\array of zk servers
+default[:mapr][:nfspackageserver] = "nfspackageserver.ntp.org"      #has to be replaced by actual value
+default[:mapr][:hivemetaserver] = "" #has to be replaced by actual value
+default[:mapr][:hiveserver2] = "" #has to be replaced by actual value
+default[:mapr][:groups][:cldb] = {} #array of cldb servers
+default[:mapr][:groups][:zk]= {} #array of zk servers
 
 default[:ntp][:servers] = ["0.pool.ntp.org", "1.pool.ntp.org"]
 

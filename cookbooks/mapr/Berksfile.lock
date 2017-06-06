@@ -1,0 +1,24 @@
+DEPENDENCIES
+  apt
+  emacs
+  hostname
+  hostsfile
+  iptables
+  java (= 1.7.0)
+  mysql
+  ntp
+  ulimit
+  yum
+
+GRAPH
+  apt (6.1.0)
+  emacs (0.10.0)
+  hostname (0.4.2)
+    hostsfile (>= 0.0.0)
+  hostsfile (2.4.5)
+  iptables (4.2.0)
+  java (1.7.0)
+  mysql (8.4.0)
+  ntp (3.4.0)
+  ulimit (0.4.0)
+  yum (5.0.1)

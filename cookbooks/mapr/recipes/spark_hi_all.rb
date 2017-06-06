@@ -7,4 +7,4 @@
 
 # TODO: ajaxterm needed?
 
-package "mapr-spark-hi*"
+package 'mapr-spark-historyserver'

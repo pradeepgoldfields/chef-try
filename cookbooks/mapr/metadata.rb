@@ -9,9 +9,9 @@ version          "0.1.1"
   supports os
 end
 
-depends 'hostsfile'
-depends 'hostname'
-depends 'apt'
-depends 'yum'
-depends 'iptables'
+#depends 'hostsfile'
+#depends 'hostname'
+#depends 'apt'
+#depends 'yum'
+#depends 'iptables'
 depends 'java', '= 1.7.0'
